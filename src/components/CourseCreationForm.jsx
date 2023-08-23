@@ -156,7 +156,6 @@ const CourseCreationForm = () => {
                       Course Affliation:
                       <select
                         name="affliation"
-                        required
                         value={values.affliation}
                         onChange={handleChange}
                         className="mt-1 p-2 border rounded w-full"
@@ -174,7 +173,6 @@ const CourseCreationForm = () => {
                       Entrance Required
                       <select
                         name="entrance"
-                        required
                         value={values.entrance}
                         onChange={handleChange}
                         className="mt-1 p-2 border rounded w-full"
@@ -307,7 +305,6 @@ const CourseCreationForm = () => {
                             Tag
                             <select
                               name={`courseTags.${index}.tag`}
-                              required
                               value={courseTag.tag}
                               onChange={handleChange}
                               className="mt-1 p-2 border rounded w-full"
@@ -321,7 +318,6 @@ const CourseCreationForm = () => {
                             Description
                             <select
                               name={`courseTags.${index}.description`}
-                              required
                               value={courseTag.description}
                               onChange={handleChange}
                               className="mt-1 p-2 border rounded w-full"

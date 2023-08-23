@@ -8,9 +8,9 @@ const Post = () => {
   const [showNotification, setShowNotification] = useState(false)
   return (
     <>
-      <div className="w-full p-32 pb-4  bg-[#f9f8fd]">
-        <h1 className="flex justify-center text-[30px]">Blogs</h1>
-        <div className="w-full border pt-3 bg-white rounded shadow-lg">
+      <div className="w-full p-32 pb-4 bg-[#f9f8fd]">
+        <h1 className="flex justify-center text-[30px] font-bold mb-2">Blogs</h1>
+        <div className="w-full border pt-3 bg-white rounded shadow-lg mt-5">
           <div className="flex items-center p-2 gap-2">
             <img
               src="https://applyzones.com/uploads/logos/az-the-university-of-greenwich-logo.png"
