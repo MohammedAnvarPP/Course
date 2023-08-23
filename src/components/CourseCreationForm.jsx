@@ -242,7 +242,7 @@ const CourseCreationForm = () => {
               <div className="space-y-4 w-full">
                 <h2 className="text-lg font-semibold">Intakes</h2>
                 <FieldArray name="intakes">
-                  {({ push, remove }) => (
+                  {({ push }) => (
                     <>
                       {values.intakes.map((intake, index) => (
                         <div key={index} className="flex gap-3 w-full">
@@ -297,7 +297,7 @@ const CourseCreationForm = () => {
               <div className="space-y-4">
                 <h2 className="text-lg font-semibold">Course Tag</h2>
                 <FieldArray name="courseTags">
-                  {({ push, remove }) => (
+                  {({ push }) => (
                     <>
                       {values.courseTags.map((courseTag, index) => (
                         <div key={index} className="flex gap-3 w-full">
