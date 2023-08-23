@@ -1,10 +1,10 @@
 import React from 'react'
 import { Formik, Form, FieldArray } from 'formik'
-import * as Yup from 'yup'
 import { FaFileAlt, FaFileContract, FaSave } from 'react-icons/fa'
 import './component.css'
 import { IoMdClose } from 'react-icons/io'
 import { FiPlus } from 'react-icons/fi'
+// import {db} from "../firebase"
 
 //   const validationSchema = Yup.object().shape({
 //     admission: Yup.string().required('Required'),
@@ -14,6 +14,7 @@ import { FiPlus } from 'react-icons/fi'
 //   })
 
 const CourseCreationForm = () => {
+
   const initialValues = {
     admission: '',
     service: '',
@@ -21,10 +22,23 @@ const CourseCreationForm = () => {
     courseTags: [{ tag: '', description: '' }],
   }
 
-
   const handleSubmit = (values) => {
-    console.log(values)
-    // Perform further actions, e.g., sending the data to a server
+    console.log(values);
+    // db.collection("courseCreation").add({
+    //   id:values.id,
+    //   name:values.name,
+    //   eduId:values.eduId,
+    //   status:values.status,
+    //   personId:values.personalDetails.pId,
+    //   phone:values.personalDetails.phone,
+    //   email:values.personalDetails.email,
+    //   education:values.personalDetails.education,
+    // }).then(()=>{
+    //   alert("Message have been Submitted")
+    // }).catch((error)=>{
+    //   alert(error.message);
+    // });
+    // values=initialValues;
   }
   return (
     <div>
@@ -36,11 +50,21 @@ const CourseCreationForm = () => {
           </p>
         </div>
         <div className="flex items-center gap-2">
-          <button className="button flex gap-1 items-center text-white">
+          <button
+            className="button flex gap-1 items-center text-white"
+            onClick={() => {
+              alert('No action added')
+            }}
+          >
             <FaSave fill="white" />
             Save As Draft
           </button>
-          <div className="close">
+          <div
+            className="close"
+            onClick={() => {
+              alert('No action added')
+            }}
+          >
             <IoMdClose />
           </div>
         </div>
@@ -77,7 +101,7 @@ const CourseCreationForm = () => {
         <h2 className="text-[30px]">Additional Infromation</h2>
         <Formik
           initialValues={initialValues}
-        //   validationSchema={validationSchema}
+          //   validationSchema={validationSchema}
           onSubmit={handleSubmit}
         >
           {({ values, handleChange, handleSubmit }) => (
@@ -325,7 +349,10 @@ const CourseCreationForm = () => {
                 </FieldArray>
               </div>
               <div className="w-full flex justify-center items-center">
-                <button type="submit" className="bg-green-500 w-[150px]  text-white py-2 px-4 rounded hover:bg-green-600">
+                <button
+                  type="submit"
+                  className="bg-green-500 w-[150px]  text-white py-2 px-4 rounded hover:bg-green-600"
+                >
                   Submit
                 </button>
               </div>
