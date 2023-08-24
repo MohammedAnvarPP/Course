@@ -1,8 +1,9 @@
 import React from 'react'
+import "./component.css"
 
 const Notifications = () => {
   return (
-    <div className="p-[90px]  bg-[#f9f8fd]">
+    <div className="p-[90px]  bg-[#f9f8fd] notificationMain">
       <h1 className="ml-5 font-bold text-[30px] p-2 mb-3">Notifications</h1>
       <div className='flex flex-col shadow-2xl'>
         <div className="flex gap-2 bg-blue-100 p-3">
@@ -15,10 +16,10 @@ const Notifications = () => {
           </div>
           <div className="flex flex-col">
             <div className="flex gap-2">
-              <p className="font-bold">Edumpus </p>
-              <p> commented on a post</p>
+              <p className="font-bold notificationMainPersonName">Edumpus </p>
+              <p className='notificationMainComment'> commented on a post</p>
             </div>
-            <p className="text-gray-400  text-[13px]">Now</p>
+            <p className="text-gray-400  text-[13px] commentTime">Now</p>
           </div>
         </div>
         <div className="flex gap-2 bg-blue-100 p-3">
@@ -31,10 +32,10 @@ const Notifications = () => {
           </div>
           <div className="flex flex-col">
             <div className="flex gap-2">
-              <p className="font-bold">Haris Webdesign </p>
-              <p>applied new syllabus course as sample text like this ui</p>
+              <p className="font-bold notificationMainPersonName">Haris Webdesign </p>
+              <p className='notificationMainComment'>applied new syllabus course as sample text like this ui</p>
             </div>
-            <p className="text-gray-400  text-[13px]">3 min ago</p>
+            <p className="text-gray-400  text-[13px] commentTime">3 min ago</p>
           </div>
         </div>
         <div className="flex gap-2 p-3">
@@ -47,10 +48,10 @@ const Notifications = () => {
           </div>
           <div className="flex flex-col">
             <div className="flex gap-2">
-              <p className="font-bold">Jennifer Lopez</p>
-              <p>applied scince and technology degree courses</p>
+              <p className="font-bold notificationMainPersonName">Jennifer Lopez</p>
+              <p className='notificationMainComment'>applied scince and technology degree courses</p>
             </div>
-            <p className="text-gray-400  text-[13px]">1 hrs ago</p>
+            <p className="text-gray-400  text-[13px] commentTime">1 hrs ago</p>
           </div>
         </div>
         <div className="flex gap-2 p-3">
@@ -63,10 +64,10 @@ const Notifications = () => {
           </div>
           <div className="flex flex-col">
             <div className="flex gap-2">
-              <p className="font-bold">Molly Morgan </p>
+              <p className="font-bold notificationMainPersonName">Molly Morgan </p>
               <p> replied your comment</p>
             </div>
-            <p className="text-gray-400  text-[13px]">1 day ago</p>
+            <p className="text-gray-400  text-[13px] commentTime">1 day ago</p>
           </div>
         </div>
         <div className="flex gap-2 p-3">
@@ -79,10 +80,10 @@ const Notifications = () => {
           </div>
           <div className="flex flex-col">
             <div className="flex gap-2">
-              <p className="font-bold">John Due </p>
+              <p className="font-bold notificationMainPersonName">John Due </p>
               <p> applied scince and technology degree courses</p>
             </div>
-            <p className="text-gray-400  text-[13px]">1 week ago</p>
+            <p className="text-gray-400  text-[13px] commentTime">1 week ago</p>
           </div>
         </div>
         <div className="flex gap-2 p-3">
@@ -95,10 +96,10 @@ const Notifications = () => {
           </div>
           <div className="flex flex-col">
             <div className="flex gap-2">
-              <p className="font-bold">Danny Miles </p>
+              <p className="font-bold notificationMainPersonName">Danny Miles </p>
               <p>commented on your photo</p>
             </div>
-            <p className="text-gray-400  text-[13px]">1 month ago</p>
+            <p className="text-gray-400  text-[13px] commentTime">1 month ago</p>
           </div>
         </div>
         <div className="flex gap-2 p-3">
@@ -111,10 +112,10 @@ const Notifications = () => {
           </div>
           <div className="flex flex-col">
             <div className="flex gap-2">
-              <p className="font-bold">Edumpus  </p>
+              <p className="font-bold notificationMainPersonName">Edumpus  </p>
               <p> Approved your blog post</p>
             </div>
-            <p className="text-gray-400  text-[13px]">14 Jan 2021</p>
+            <p className="text-gray-400  text-[13px] commentTime">14 Jan 2021</p>
           </div>
         </div>
       </div>

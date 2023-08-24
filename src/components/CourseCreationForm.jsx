@@ -344,7 +344,7 @@ const CourseCreationForm = () => {
               <div className="w-full flex justify-center items-center">
                 <button
                   type="submit"
-                  className="bg-green-500 w-[150px]  text-white py-2 px-4 rounded hover:bg-green-600"
+                  className="bg-green-500 w-[150px] submitButton text-white py-2 px-4 rounded hover:bg-green-600"
                 >
                   Submit
                 </button>

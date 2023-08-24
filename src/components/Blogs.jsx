@@ -3,12 +3,13 @@ import { MdOutlineMoreHoriz } from 'react-icons/md'
 import { PiArrowBendDownRightFill } from 'react-icons/pi'
 import { BsArrowDownShort, BsArrowUpShort } from 'react-icons/bs'
 import Notifications from './Notifications'
+import "./component.css"
 
 const Post = () => {
   const [showNotification, setShowNotification] = useState(false)
   return (
-    <div>
-      <div className="w-full p-32 pb-4 bg-[#f9f8fd]">
+    <div className=''>
+      <div className="w-full p-32 pb-4 bg-[#f9f8fd] blogsMainContainer">
         <h1 className="flex justify-center text-[30px] font-bold mb-2">Blogs</h1>
         <div className="w-full border pt-3 bg-white rounded shadow-lg mt-5">
           <div className="flex items-center p-2 gap-2">
@@ -42,7 +43,7 @@ const Post = () => {
             <img
               src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
               alt="University of Greenwich"
-              className="w-full h-[670px] object-contain"
+              className="w-full h-[670px] object-contain blogImage"
             />
           </div>
           {/* Add more comments */}

@@ -1,12 +1,12 @@
 import Profiles from './components/Profiles'
 import './App.css'
-import Post from './components/Post'
+import Blogs from './components/Blogs'
 function App() {
 
   return (
    <div>
 <Profiles/>
-<Post/>
+<Blogs/>
    </div>
   )
 }
