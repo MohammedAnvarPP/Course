@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { MdOutlineMoreHoriz } from 'react-icons/md'
 import { PiArrowBendDownRightFill } from 'react-icons/pi'
-import { BsArrowDownShort, BsArrowUpShort } from 'react-icons/Bs'
+import { BsArrowDownShort, BsArrowUpShort } from 'react-icons/bs'
 import Notifications from './Notifications'
 
 const Post = () => {
