@@ -8,7 +8,7 @@ const Notifications = () => {
         <div className="flex gap-2 bg-blue-100 p-3">
           <div className="">
             <img
-              src="../src/assets/edumpus.jpg"
+              src="https://play-lh.googleusercontent.com/nOhKWRVGTXxFJU4xT6iebs36w-I7flAv84B3ChysXYs9xzrPH1dko7rNUYuJMTNls9RR"
               className="border-[2px] rounded-full w-10 h-10"
               alt=""
             />
@@ -104,7 +104,7 @@ const Notifications = () => {
         <div className="flex gap-2 p-3">
           <div className="">
             <img
-              src="../src/assets/edumpus.jpg"
+              src="https://play-lh.googleusercontent.com/nOhKWRVGTXxFJU4xT6iebs36w-I7flAv84B3ChysXYs9xzrPH1dko7rNUYuJMTNls9RR"
               className="border-[2px] rounded-full w-10 h-10"
               alt=""
             />
