@@ -13,7 +13,7 @@ const Profiles = () => {
       name: 'Charlotte Rosalie',
       eduId: 'EDU-656564552',
       status: 'Add Your Rest Document',
-      logo: '../src/assets/edumpus.jpg',
+      logo: 'https://play-lh.googleusercontent.com/nOhKWRVGTXxFJU4xT6iebs36w-I7flAv84B3ChysXYs9xzrPH1dko7rNUYuJMTNls9RR',
       personalDetails: {
         pId: 0,
         phone: '+91 9876543210',
@@ -44,7 +44,7 @@ const Profiles = () => {
       name: 'Benchamin',
       eduId: 'EDU-656564552',
       status: 'Verified',
-      logo: '../src/assets/edumpus.jpg',
+      logo: 'https://play-lh.googleusercontent.com/nOhKWRVGTXxFJU4xT6iebs36w-I7flAv84B3ChysXYs9xzrPH1dko7rNUYuJMTNls9RR',
       personalDetails: {
         pId: 2,
         phone: '+91 9876543210',
