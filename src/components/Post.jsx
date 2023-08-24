@@ -47,7 +47,6 @@ const Post = () => {
           </div>
           {/* Add more comments */}
           <div className="border-t pt-4 space-y-2">
-            {/* Comment components */}
           </div>
           <div className="p-4 w-full flex gap-2">
             <img
