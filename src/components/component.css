@@ -7,7 +7,6 @@
     width: 30px;
     border-radius: 50%;
     background: #d0d0d0;
-    /* padding: 1px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,3 +18,35 @@
     height: 22px;
     padding: 4px;
 }
+@media (max-width: 1024px) {
+    .courseCreationHeader .step{
+        width: 60px;
+        height: 15px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .courseCreationHeader .button{
+        font-size: 11px;
+    }
+    .courseCreationHeader .close{
+        width: 20px;
+        border-radius: 50%;
+        background: #d0d0d0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px
+    }
+   .courseCreationHeader h1{
+    font-weight: bold;
+    font-size: 18px !important;
+   }
+   .addtionalSection h2{
+    font-weight: bold;
+    margin-top: 1px;
+    font-size: 20px;
+   }
+   .formAdditional{
+    font-size: 11px;
+   }
+  }

@@ -58,7 +58,7 @@ const Profiles = () => {
   return (
     <div className="">
       <div
-        className="flex gap-20 p-9 w-full bg-[#f9f8fd] justify-center flex-wrap"
+        className="flex gap-6 p-9 w-full bg-[#f9f8fd] justify-center flex-wrap"
         // onClick={() => {
         //   setActive(true)
         // }}

@@ -42,7 +42,7 @@ const CourseCreationForm = () => {
   }
   return (
     <div>
-      <div className="flex justify-between p-4 border-b-[1px]">
+      <div className="courseCreationHeader flex justify-between p-4 border-b-[1px]">
         <div className="flex gap-2 items-center">
           <h1 className="text-[30px]">Course Creation</h1>
           <p className="step flex justify-center bg-slate-400 items-center rounded-lg">
@@ -65,12 +65,12 @@ const CourseCreationForm = () => {
               alert('No action added')
             }}
           >
-            <IoMdClose />
+            <IoMdClose className='close'/>
           </div>
         </div>
       </div>
-      <div className="pt-10">
-        <div className="flex flex-row items-center gap-[50px] text-center justify-center">
+      <div className="pt-10 ">
+        <div className="criteria flex flex-row items-center gap-[8%] text-center justify-center">
           <div className="flex flex-col items-center">
             <div className="rounded-full bg-green-200 w-[50px] h-[50px] flex items-center justify-center">
               <FaFileAlt fill="green" />
@@ -97,16 +97,15 @@ const CourseCreationForm = () => {
           </div>
         </div>
       </div>
-      <div className="pt-3 p-[30px]">
+      <div className="pt-3 p-[30px] addtionalSection">
         <h2 className="text-[30px]">Additional Infromation</h2>
         <Formik
           initialValues={initialValues}
-          //   validationSchema={validationSchema}
           onSubmit={handleSubmit}
         >
-          {({ values, handleChange, handleSubmit }) => (
+          {({ values, handleChange }) => (
             <Form className="p-6 space-y-6">
-              {/* Additional Information */}
+              <div className='formAdditional'>
               <div className="flex flex-col gap-8">
                 <div className="flex w-full gap-3">
                   <div className="w-[50%]">
@@ -237,8 +236,6 @@ const CourseCreationForm = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Intakes */}
               <div className="space-y-4 w-full">
                 <h2 className="text-lg font-semibold">Intakes</h2>
                 <FieldArray name="intakes">
@@ -351,6 +348,7 @@ const CourseCreationForm = () => {
                 >
                   Submit
                 </button>
+              </div>
               </div>
             </Form>
           )}
