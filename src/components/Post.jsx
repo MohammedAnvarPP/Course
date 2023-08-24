@@ -23,7 +23,7 @@ const Post = () => {
             </div>
           </div>
           <div className="p-4">
-            <p className="text-gray-700 mb-[30px]">
+            <div className="text-gray-700 mb-[30px]">
               <p className="mb-6"> Dear Students! </p>
               Now, Canada is the third country in the world to authorize a
               COVID-19 vaccine. Approval for COVID-19 vaccine given on December
@@ -31,7 +31,7 @@ const Post = () => {
               vaccine: Also, as per the Canadian government, "Health Canada
               authorized the Pfizer BioTech COVID-19 mRNA vaccine (Toxinameran
               or BNT16262) for use for the COVID-19 pandemic
-            </p>
+            </div>
             <p className="mb-2">
               -Contact Edumpus FREE Counselling & make your Overseas Careers
               dream a reality
@@ -42,7 +42,7 @@ const Post = () => {
             <img
               src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
               alt="University of Greenwich"
-              className="w-full h-[670px] object-cover"
+              className="w-full h-[670px] object-contain"
             />
           </div>
           {/* Add more comments */}
