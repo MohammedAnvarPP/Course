@@ -66,7 +66,7 @@ const Profiles = () => {
       >
         {studentDetails.map((details,index) => (
           <div
-            className="w-[300px] bg-[#fff] border-[1px] p-1 profileBrick relative"
+            className="w-[300px] bg-[#fff] rounded-lg border-[1px] p-3 profileBrick relative"
             key={details.id}
             onClick={() => handleBrickClick(index)}
           >
